@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test FP Administración y Finanzas</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="menu">
+        <h1>📚 FP Administración y Finanzas</h1>
+
+        <div id="subjects"></div>
+    </div>
+
+    <div id="quiz" class="hidden">
+
+        <button class="btn volver" onclick="volverMenu()">
+            ⬅ Volver
+        </button>
+
+        <h2 id="tituloAsignatura"></h2>
+
+        <p id="progreso"></p>
+
+        <h3 id="pregunta"></h3>
+
+        <div id="respuestas"></div>
+
+        <button id="btnSiguiente" class="btn hidden">
+            Siguiente
+        </button>
+
+    </div>
+
+    <div id="resultado" class="hidden">
+
+        <h2>Resultado</h2>
+
+        <p id="estadisticas"></p>
+
+        <p id="nota"></p>
+
+        <button class="btn" id="btnRepasar">
+            Repasar errores
+        </button>
+
+        <button class="btn" onclick="volverMenu()">
+            Menú principal
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/preguntas.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
